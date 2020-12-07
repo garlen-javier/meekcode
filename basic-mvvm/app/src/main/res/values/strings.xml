@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ParcelTracker</string>
+    <string name="track">Track</string>
+    <string name="enter_your_tracking_no">Enter your tracking no.</string>
+</resources>
