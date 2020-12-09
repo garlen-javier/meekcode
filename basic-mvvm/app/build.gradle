@@ -2,6 +2,11 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id "org.jetbrains.kotlin.plugin.allopen" version "1.4.20"
+}
+
+allOpen {
+    annotation "com.meekcode.mvvm.parceltracker.OpenClass"
 }
 
 android {
@@ -45,5 +50,13 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    //Espresso
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // Truth Assertion
+    testImplementation "com.google.truth:truth:1.1"
+    androidTestImplementation "com.google.truth:truth:1.1"
+    //InstantTaskExecutorRule
+    testImplementation 'android.arch.core:core-testing:1.1.1'
+    //Mockito framework
+    testImplementation  'org.mockito:mockito-core:2.19.0'
 }
