@@ -1,0 +1,10 @@
+[build]
+  publish = "public"
+  command = "gatsby build && npm run build:lambda"
+  functions = "lambda"
+  
+[build.environment]
+  NODE_VERSION = "12.18.3"
+
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
