@@ -29,11 +29,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         viewFinder = findViewById(R.id.viewFinder)
         overlay = Overlay(this)
-        val layoutParamsDrawing = ViewGroup.LayoutParams(
+        val layoutOverlay = ViewGroup.LayoutParams(
             ViewGroup.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.MATCH_PARENT
         )
-        this.addContentView(overlay, layoutParamsDrawing)
+        this.addContentView(overlay, layoutOverlay )
 
         if (allPermissionsGranted()) {
             startCamera()
