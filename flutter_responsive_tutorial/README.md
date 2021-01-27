@@ -1,6 +1,6 @@
 # flutter_responsive_tutorial
 
-For responsive flutter application tutorial
+For responsive flutter application tutorial<br>
 Blog: https://www.meekcode.com/blog/easy-responsive-ui-in-flutter
 
 ## Getting Started
