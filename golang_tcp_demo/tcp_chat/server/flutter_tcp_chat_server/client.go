@@ -29,14 +29,10 @@ func (instance *client) readEvents() {
 		str, err := reader.ReadString('\n')
 		if err != nil {
 			if err != io.EOF {
-				//TODO: remove
 				fmt.Println("failed to read data, err:", err)
 			}
 			return
 		}
-		//TODO: use value if not testing
-		//fmt.Println(str)
-		// var joinRoom = "{\"event\": \"joinRoom\",\"args\": {\"roomName\": \"testRoom\",\"userName\": \"user4321\"} }"
 
 		var eventName = gjson.Get(str, "event").String()
 		var args = gjson.Get(str, "args").String()
